@@ -8,3 +8,20 @@ In order to achieve the capability to work with multiple languages, naturally th
 * Text from various languages are grouped and languages for which 10,000 or more pages exist are kept in the final mC4 dataset. 
 
 In this specific manner, the dataset was curated and it is important to note that the quality of the data determines the model performance and hence such care has to be taken in the collected data on which the model is to be trained on. Let's move on to understand how this data was used in order to train the mT5 model. 
+
+
+## Specifics of mT5 Pre-Training
+Now that we have understood the model architecture and the dataset that is prepared, let us further understand how these two components come together in order to create the mT5 model as we know. As discussed with respect to the dataset collected in order to train the mT5 model, it consists of 101 different languages and sampling data from each of these languages while pre-training becomes a major factor. This is an interesting problem and the way it has been tacked while pre-training the mT5 model is particularly interesting. 
+
+An approach called the zero-sum game is adopted. A simple way to think about the zero-sum game is it's like trying to balance two separate things: learning too much from languages with few resources or not learning enough from languages with plenty of resources. Essentially, if low-resource languages and sampled too often the model may tend to overfit and if the high resource languages are not trained on enough, the model will tend to overfit. In order to obtain the best of both worlds, the zero-sum game approach is adopted. The approach is not something that is completely new, but is adopted from prior research. 
+
+Diving into further technical aspects of this approach, low resource languages are boosted by sampling examples accoring to the probability equation represented by $p(L) \propto |L|^{\alpha}$. Let us break this down in order to understand the nuances better.  
+1. **The Purpose**
+    * Extra attention needs to be given to low resource languages in comparison to the high resource languages.   
+    * In the equation $p(L) \propto |L|^{\alpha}$, $p(L)$ is the probability of choosing text from a particular language $L$ during training and here $|L|$ is the number of instances(sentences or pieces of text) belonging to the langauge $L$. 
+2. **Understanding Hyperparameter $\alpha$**
+    * The hyperparameter $\alpha$ is used to specify mathematically how much boost should low resource languages be given during the pre-training procedure. This hyperparameter can be adjusted and the most feasible number for this hyperparameter can be determined through experimentation. 
+    * In a typical scenario, the value of $\alpha$ is set to be less than 1 which can be anuything for example: 0.8, 0.6 or 0.3 etc.
+3. **Determining the Value of $\alpha$**
+    * In order to find the optimal value of $\alpha$ for the mT5 setting, the values used in prior research were experimented with such as 0.7, 0.3 and 0.2. 
+    * After experimenting with these 3 values it was found that $\alpha = 0.3$ worked most optimally, in the sense that this value provided a good balance between how the model performance varies for low-resouce and high-resource languages. 
