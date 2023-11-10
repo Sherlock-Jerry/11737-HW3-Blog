@@ -19,9 +19,28 @@ Efforts have been made to address this language gap by releasing additional mode
 
 Enter the mT5, a multilingual model aiming to bridge language gaps by utilizing the state-of-the-art Text-to-Text Transformer architecture. It's designed to be a versatile solution, capable of understanding and generating text in multiple languages. The mT5 model represents a step forward in making advanced language processing accessible to a more diverse global audience. 
 
-## Introducing the T5 Model
+## Introducing the mT5 Model
 The Multilingual T5, or mT5 for short, is, as the name suggests, a multilingual variant of the popular T5 model. To achieve its multilingual capability, the model underwent pretraining on a dataset covering a staggering 101 different languages. The model itself boasts an impressive parameter range, spanning between 300 million and 13 billion. This encompasses five different variants, starting with the smaller variant containing 300 million parameters, and scaling up to the XXL variant with a substantial 13 billion parameters.
 
 Through its extensive pretraining across a diverse array of languages, mT5 showcases its remarkable capacity to generalize across linguistic variations. This capability contributes significantly to the improvement of models in low-resource language domains. The architecture of mT5 facilitates effective information transfer and knowledge sharing among languages, highlighting its adaptability and utility in scenarios where linguistic resources are limited.
 
 In the upcoming sections, we will delve into the preparation of the dataset on which the model was trained and explore the nuances of the training strategy. Specifically, we'll discuss how the training strategy, initially designed for the T5 model, was fine-tuned to cater to the unique requirements of the mT5 model. Additionally, we will examine the performance demonstrated by the mT5 model and engage in a discussion on its capabilities.
+
+## The Data that powers the mT5 model
+To enable the mT5 model to proficiently handle multiple languages, it undergoes training on a diverse dataset known as the mC4 dataset, encompassing text from a comprehensive set of 101 languages. Unlike the original T5 model, which relied on the English-only C4 dataset from Common Crawl, the mC4 dataset is a multilingual adaptation, recognizing the necessity for linguistic diversity.
+
+The creation of this multilingual dataset involves meticulous approaches:
+
+* Line length filters are implemented to ensure that at least three lines, each containing over 200 characters, are included. This filter addresses the variance observed in sentences of languages other than English within the C4 dataset.
+* Identifying different languages within the dataset is accomplished using the Compact Language Detector V3 (CLD3). This tool assigns a confidence score along with the detected language, and only text pieces with a confidence score surpassing 70% are retained.
+* Over 100 languages are encompassed by aggregating data from 71 monthly web scrapes released by Common Crawl. This stands in stark contrast to the original C4 dataset, where a single scrape sufficed, underscoring the challenge of obtaining comprehensive data when dealing with a multitude of languages.
+* The final mC4 dataset selects text from various languages, retaining those with 10,000 or more pages, emphasizing a threshold for inclusion based on language volume.
+
+It's crucial to recognize that the quality of the data profoundly influences model performance. Consequently, meticulous attention is dedicated to curating the dataset that serves as the foundation for training the mT5 model. In the subsequent sections, we'll delve into how this curated data is leveraged to train and optimize the capabilities of the mT5 model.
+
+## Dive into mT5 Architecture
+The architecture of mT5 closely followed that of the T5 model. In fact it is based on an improved version of the T5 model called the T5v1.1 which is a slight improvement of the T5 model with some minor architectural tweaks. Essentially the mT5 architecture can be understood by studying the architecture of the T5 model. 
+
+\<Fill in Architecture Details\>
+
+## Specifics of mT5 Pre-Training
