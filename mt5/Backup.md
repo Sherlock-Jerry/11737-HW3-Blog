@@ -25,3 +25,13 @@ Diving into further technical aspects of this approach, low resource languages a
 3. **Determining the Value of $\alpha$**
     * In order to find the optimal value of $\alpha$ for the mT5 setting, the values used in prior research were experimented with such as 0.7, 0.3 and 0.2. 
     * After experimenting with these 3 values it was found that $\alpha = 0.3$ worked most optimally, in the sense that this value provided a good balance between how the model performance varies for low-resouce and high-resource languages. 
+
+
+
+## Comparison with Other Models
+In order to better appreciate the capabilities that the mT5 model provides, it makes sense to also have a very brief overview of what the other models have accomplished in this field. Let us analyze a few models that have support for a few dozen languages in order to arrive at a fair comparison. 
+1. **mBERT**: Let us start with the mBERT model, which is multilingual variant of the well-known BERT model. The mBERT model follows the recipe of the BERT model closely in terms of the architecture and the objectives used. Once again, the dataset that mBERT is trained on differs from what BERT is trained. While BERT uses English Wikipedia and the Toronto Book Corpus, mBERT completely relies on text involving 104 languages from Wikipedia.
+2. **XLM**: The XLM is also based on BERT, but utilizes improved methods for pre-training multi-lingual language models through the inclusion of explicitly cross-lingual pre-training objectives. 
+3. **XLM-R**: Based on the name XLM-R, you would think this model is related to the XLM model, and in fact you are right. The XLM-R is an improved version of the XLM and is based on the RoBERTa model. It is trained on data in 100 languages from Common Crawl and involves a cross-lingual masked language model objective. 
+4. **mBART**: The mBART is based on the BART model and is a mulilingual encoder-decoder architecture. The mBART training involves a combination of span masking and sentence shuffling objectives. When it comes to the data that mBART was trained on, the dataset involves a subset of 25 languages picked up from the same data as that of XLM-R. 
+5. **MARGE**: MARGE is a multilingual encoder decoder model and is trained to reconstruct a document in one language by using data retreived from documents in other languages. The dataset involves text from 26 differnt langauges and is from Wikipedia and CC-News. 

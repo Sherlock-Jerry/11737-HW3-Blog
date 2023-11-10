@@ -60,3 +60,38 @@ Diving into further technical aspects of this approach, low resource languages a
     * After experimenting with these 3 values it was found that $\alpha = 0.3$ worked most optimally, in the sense that it struck a balance, showcasing optimal model performance across both low-resource and high-resource languages.  
 
 In essence, this dynamic approach adjusts the attention given to different languages during the pre-training process, ensuring the model learns effectively from a diverse linguistic landscape. As mentioned earlier, the $\alpha$ parameter becomes the key to striking the right balance, making the mT5 model versatile and robust in handling various language scenarios, which we will further discuss in subsequent sections.
+
+## Experiments and Results
+
+## Zero-Shot Generation Setting
+
+## Comparison with Other Models
+To truly grasp the capabilities of the mT5 model, it's valuable to briefly explore the achievements of other models in this domain. Let's delve into a few models supporting at least a few dozen languages for a fair comparison:
+1. **mBERT**  
+    Starting with mBERT, a multilingual variant of the renowned BERT model, it closely follows BERT's architecture and objectives. However, the training data diverges, with mBERT relying on text from 104 languages extracted from Wikipedia instead of BERT's English Wikipedia and Toronto Book Corpus.
+2. **XLM**  
+    XLM builds upon BERT, incorporating enhanced methods for pre-training multi-lingual language models. It introduces explicitly cross-lingual pre-training objectives to broaden its language capabilities.
+3. **XLM-R**  
+    As the name suggests, XLM-R is an advancement of the XLM model, based on RoBERTa. Trained on data from Common Crawl in 100 languages, it employs a cross-lingual masked language model objective for improved performance.
+4. **mBART**  
+    Derived from the BART model, mBART boasts a multilingual encoder-decoder architecture. Its training incorporates a blend of span masking and sentence shuffling objectives. The dataset comprises a subset of 25 languages, sourced from the same data pool as XLM-R.
+5. **MARGE**  
+    MARGE, a multilingual encoder-decoder model, is trained to reconstruct a document in one language using data extracted from documents in other languages. The dataset encompasses text from 26 diverse languages, originating from Wikipedia and CC-News.
+
+In order to obtain a quick comparison of the mT5 model with the other multilingual language models mentioned above, check out the table below. It provides a snapshot of key parameters, supported languages, and data sources for models like mBERT, XLM, XLM-R, mBART, MARGE, and finally the mT5
+
+
+| Model                       | Architecture   | Parameters | # Languages | Data Source               |
+|-----------------------------|----------------|------------|--------------|---------------------------|
+| mBERT        | Encoder-only   | 180M       | 104          | Wikipedia                |
+| XLM| Encoder-only   | 570M       | 100          | Wikipedia                |
+| XLM-R| Encoder-only   | 270M – 550M | 100          | Common Crawl (CCNet)     |
+| mBART  | Encoder-decoder | 680M       | 25           | Common Crawl (CC25)      |
+| MARGE  | Encoder-decoder | 960M       | 26           | Wikipedia or CC-News    |
+| mT5                  | Encoder-decoder | 300M – 13B  | 101          | Common Crawl (mC4)       |
+
+*Table: A comparison of multilingual language models.*
+
+## Wrapping it up (Conclusion)
+
+## References
