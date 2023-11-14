@@ -87,7 +87,7 @@ Enter the zero-sum game approach, a key player in the pre-training of mT5. Think
 Diving into further technical aspects of this approach, low resource languages are boosted by sampling examples accoring to the probability equation represented by p(L) α (|L| ^ α). Let us break this down in order to understand the nuances better.  
 1. **The Purpose: Focusing on Linguistic Diversity**
     * It's crucial to prioritize low-resource languages, ensuring they receive more attention than their high-resource counterparts.
-    * In the equation p(L) α (|L| ^ α), p(L) signifies the likelihood of selecting text from a specific language $L$ during training, while |L| represents the count of instances (sentences or text pieces) in language L.
+    * In the equation p(L) α (\|L\| ^ α), p(L) signifies the likelihood of selecting text from a specific language L during training, while \|L\| represents the count of instances (sentences or text pieces) in language L.
 2. **Understanding Hyperparameter α: A Tuning Knob**
     * The hyperparameter α quantifies the boost given to low-resource languages during pre-training. Adjusting α allows for fine-tuning this boost, and the value of α is determined through experimentation.
     * Typically set to a value less than 1 (e.g., 0.8, 0.6, or 0.3), α plays a pivotal role in shaping the model's attention distribution.
