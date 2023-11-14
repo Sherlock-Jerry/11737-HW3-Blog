@@ -136,18 +136,18 @@ To truly grasp the capabilities of the mT5 model, it's valuable to briefly explo
 
 In order to obtain a quick comparison of the mT5 model with the other multilingual language models mentioned above, check out the table below. It provides a snapshot of key parameters, supported languages, and data sources for models like mBERT, XLM, XLM-R, mBART, MARGE, and finally the mT5
 
-<p align="center">
-| Model                       | Architecture   | Parameters | # Languages | Data Source               |
-|-----------------------------|----------------|------------|--------------|---------------------------|
-| mBERT        | Encoder-only   | 180M       | 104          | Wikipedia                |
-| XLM| Encoder-only   | 570M       | 100          | Wikipedia                |
-| XLM-R| Encoder-only   | 270M – 550M | 100          | Common Crawl (CCNet)     |
-| mBART  | Encoder-decoder | 680M       | 25           | Common Crawl (CC25)      |
-| MARGE  | Encoder-decoder | 960M       | 26           | Wikipedia or CC-News    |
-| mT5                  | Encoder-decoder | 300M – 13B  | 101          | Common Crawl (mC4)       |
 
-*Table: A comparison of multilingual language models.*
-</p>
+        | Model                       | Architecture   | Parameters | # Languages | Data Source               |
+        |-----------------------------|----------------|------------|--------------|---------------------------|
+        | mBERT        | Encoder-only   | 180M       | 104          | Wikipedia                |
+        | XLM| Encoder-only   | 570M       | 100          | Wikipedia                |
+        | XLM-R| Encoder-only   | 270M – 550M | 100          | Common Crawl (CCNet)     |
+        | mBART  | Encoder-decoder | 680M       | 25           | Common Crawl (CC25)      |
+        | MARGE  | Encoder-decoder | 960M       | 26           | Wikipedia or CC-News    |
+        | mT5                  | Encoder-decoder | 300M – 13B  | 101          | Common Crawl (mC4)       |
+
+                    *Table: A comparison of multilingual language models.*
+
 
 ## Wrapping it up (Conclusion)
 In conclusion, the mT5 model stands out as a powerful and versatile multilingual variant of the T5 model, demonstrating remarkable capabilities across a diverse range of languages. Its extensive pre-training on the mC4 dataset, encompassing 101 languages, and the innovative zero-sum game approach for balancing linguistic diversity during training contribute to its adaptability. The architecture of mT5, closely following T5 but with improvements, showcases the effectiveness of the encoder-decoder setup. The experiments and results presented in this blog highlight the model's superior performance, especially in zero-shot and translate-train scenarios, outperforming state-of-the-art benchmarks. Additionally, addressing challenges like accidental translation in span selection tasks underscores the model's complexity and the ongoing efforts to enhance its practical applications. As we navigate the evolving landscape of multilingual natural language processing, the mT5 model emerges as a promising solution, bridging language gaps and making advanced language processing more accessible to a global audience.
