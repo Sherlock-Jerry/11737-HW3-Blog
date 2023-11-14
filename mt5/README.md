@@ -154,11 +154,11 @@ In conclusion, the mT5 model stands out as a powerful and versatile multilingual
 
 ## References
 
-1. Xue, Linting, et al. "mT5: A massively multilingual pre-trained text-to-text transformer." arXiv preprint arXiv:2010.11934 (2020).
-2. Roberts, Adam, et al. "Exploring the limits of transfer learning with a unified text-to-text transformer." (2019).
-3. Devlin, Jacob et al. “BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding.” North American Chapter of the Association for Computational Linguistics (2019).
-4. Kudo, Taku and John Richardson. “SentencePiece: A simple and language independent subword tokenizer and detokenizer for Neural Text Processing.” Conference on Empirical Methods in Natural Language Processing (2018).
-5. Lample, Guillaume and Alexis Conneau. “Cross-lingual Language Model Pretraining.” ArXiv abs/1901.07291 (2019): n. pag.
-6. https://blog.research.google/2020/02/exploring-transfer-learning-with-t5.html
-7. https://www.analyticssteps.com/blogs/what-mt5-google-ai-open-source-multilingual-model-trained-over-101-languages
-8. https://github.com/google-research/multilingual-t5
+[1] Xue, Linting, et al. "mT5: A massively multilingual pre-trained text-to-text transformer." arXiv preprint arXiv:2010.11934 (2020).
+[2] Roberts, Adam, et al. "Exploring the limits of transfer learning with a unified text-to-text transformer." (2019).
+[3] Devlin, Jacob et al. “BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding.” North American Chapter of the Association for Computational Linguistics (2019).
+[4] Kudo, Taku and John Richardson. “SentencePiece: A simple and language independent subword tokenizer and detokenizer for Neural Text Processing.” Conference on Empirical Methods in Natural Language Processing (2018).
+[5] Lample, Guillaume and Alexis Conneau. “Cross-lingual Language Model Pretraining.” ArXiv abs/1901.07291 (2019): n. pag.
+[6] https://blog.research.google/2020/02/exploring-transfer-learning-with-t5.html
+[7] https://www.analyticssteps.com/blogs/what-mt5-google-ai-open-source-multilingual-model-trained-over-101-languages
+[8] https://github.com/google-research/multilingual-t5
