@@ -1,3 +1,10 @@
+# mT5: A Massively Multilingual Pre-Trained Text-To-Text Transformer
+
+## Authors
+1. Akhil Eppa - aeppa@cs.cmu.edu
+2. R Raghav - rraghavr@cs.cmu.edu
+
+## Introduction
 In this blog post, we'll delve into the intricacies of the mT5 model, a multilingual iteration of the T5 model. This variant has undergone training on a new dataset, showcasing improved performance across a diverse range of multilingual benchmarks. Notably, the mT5 model exhibits enhancements in tasks associated with the multilingual setting, all while leveraging the robust architecture of the "Text-to-Text Transformer" (T5) model.
 
 By exploring this blog, you'll gain a comprehensive understanding of the mT5 model, unraveling its background and the journey that led to its development. We aim to shed light on the nuances behind the mT5 model, highlighting its features and the impact it has in the realm of multilingual natural language processing.
@@ -65,7 +72,9 @@ When assessing various architectures suitable for language models, the authors o
 
 The three model architecture types are depicted in the below figure - 
 
-![Transformer Architecture Schematics](./t5_transformer_archi_variant.png)
+<p align="center">
+    <img src="./t5_transformer_archi_variant.png" alt="Transformer Architecture Schematics" />
+</p>
 
 The authors found that the Transformer (Encoder-Decoder) based architecture exhibits superior performance compared to alternative architectures, as shown by the results below - 
 ![Architecture Comparison Results](./t5_arch_comp_results.png)
@@ -142,3 +151,6 @@ In order to obtain a quick comparison of the mT5 model with the other multilingu
 ## Wrapping it up (Conclusion)
 
 ## References
+
+1. Xue, Linting, et al. "mT5: A massively multilingual pre-trained text-to-text transformer." arXiv preprint arXiv:2010.11934 (2020).
+2. Roberts, Adam, et al. "Exploring the limits of transfer learning with a unified text-to-text transformer." (2019).
