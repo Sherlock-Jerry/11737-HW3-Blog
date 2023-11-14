@@ -16,7 +16,7 @@ In simpler terms, think of the T5 model as a super-smart computer program capabl
 
 What makes the T5 model even more exciting is its versatility. It's not confined to a specific task but can accomplish a variety of them, including translating languages, summarizing text, answering questions, and more. You might wonder how a single model can perform such diverse tasks. This is achieved by adding task-specific prefixes to the input sequence and pre-training the model to produce prefix-specific outputs.The T5 model undergoes both unsupervised and supervised pre-training. In the unsupervised setting, spans are masked with a special token, and the model predicts the masked sequence. In the supervised setting, the input consists of the task name followed by the required input text, and the expected target text is provided as the corresponding output. This is just a high-level overview of the T5 model to set the stage for what comes next and bridge the gap in understanding the mT5 model.
 
-![T5 Illustration](./t5_example.gif)
+![T5 Illustration](./mt5/t5_example.gif)
 
 *Illustration of the T5 Model. [Image Credits](https://blog.research.google/2020/02/exploring-transfer-learning-with-t5.html)*
 
@@ -51,7 +51,7 @@ The architecture of mT5 closely followed that of the T5 model. In fact it is bas
 ### Attention Mask Patterns
 It is important that we understand about the different attention mask patterns, before we proceed to understand T5 model architecture
 
-![Attention Patterns](./attention_patterns.png)
+![Attention Patterns](./mt5/attention_patterns.png)
 
 The attention masks control which parts of the input elements the self-attention mechanism can focus on. The matrices visually represent these patterns.
 
@@ -73,11 +73,11 @@ When assessing various architectures suitable for language models, the authors o
 The three model architecture types are depicted in the below figure - 
 
 <p align="center">
-    <img src="./t5_transformer_archi_variant.png" alt="Transformer Architecture Schematics" />
+    <img src="./mt5/t5_transformer_archi_variant.png" alt="Transformer Architecture Schematics" />
 </p>
 
 The authors found that the Transformer (Encoder-Decoder) based architecture exhibits superior performance compared to alternative architectures, as shown by the results below - 
-![Architecture Comparison Results](./t5_arch_comp_results.png)
+![Architecture Comparison Results](./mt5/t5_arch_comp_results.png)
 
 ## Specifics of mT5 Pre-Training
 Now that we've grasped the intricacies of the model architecture and the intricately prepared dataset, let's delve into how these vital components synergize to craft the mT5 model. Examining the dataset crucial for training mT5, which spans 101 diverse languages, the process of sampling data during pre-training takes center stage. The methodology employed in pre-training mT5 to tackle this linguistic diversity is intriguing and noteworthy.
@@ -110,7 +110,7 @@ Their comprehensive results showcase the exceptional performance of the mT5-XXL 
 In exploring mT5's performance, a noteworthy trend surfaced across different model sizes and training approaches. Smaller models excelled when trained on gold datasets in various languages compared to weakly supervised or English-only training. However, this advantage diminished for larger models, where the impact of machine translations decreased as model capacity increased. This suggests the potential to bypass costly multilingual data annotation, particularly with larger models. While initially underperforming, larger mT5 models approach dedicated language-specific models' performance, indicating a capacity threshold where the model effectively manages multiple languages without significant interference effects. This observation was reinforced by comparisons between mT5 and T5 models, showcasing that larger mT5 models narrow the performance gap, hinting at a point where the model efficiently learns and handles diverse languages.
 
 <p align="center">
-    <img src="./results_table.png" alt="Results Table" />
+    <img src="./mt5/results_table.png" alt="Results Table" />
     <p align="center"><b>Results of mT5, referenced from the paper</b></p>
 </p>
 
