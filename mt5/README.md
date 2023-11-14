@@ -52,7 +52,7 @@ Left - The fully-visible mask permits the self-attention mechanism to consider t
 
 Middle - In contrast, the causal mask restricts the output at step 'i' from relying on input elements occurring after step 'i', preventing dependence on future elements.
 
-Right - The causal mask with a prefix allows a hybrid approach by enabling unrestricted attention for a section of the input sequence while enforcing causal masking for the rest, maintaining the restriction on future elements for specific parts of the sequence.</b></p>
+Right - The causal mask with a prefix allows a hybrid approach by enabling unrestricted attention for a section of the input sequence while enforcing causal masking for the rest, maintaining the restriction on future elements for specific parts of the sequence.
 
 ### Model Architecture Candidates
 When assessing various architectures suitable for language models, the authors of T5 primarily considered three types:
