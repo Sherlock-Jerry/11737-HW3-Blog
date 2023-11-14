@@ -41,7 +41,34 @@ It's crucial to recognize that the quality of the data profoundly influences mod
 ## Dive into mT5 Architecture
 The architecture of mT5 closely followed that of the T5 model. In fact it is based on an improved version of the T5 model called the T5v1.1 which is a slight improvement of the T5 model with some minor architectural tweaks. Essentially the mT5 architecture can be understood by studying the architecture of the T5 model. 
 
-\<Fill in Architecture Details\>
+### Attention Mask Patterns
+It is important that we understand about the different attention mask patterns, before we proceed to understand T5 model architecture
+
+![Attention Patterns](./attention_patterns.png)
+
+The attention masks control which parts of the input elements the self-attention mechanism can focus on. The matrices visually represent these patterns.
+
+Left - The fully-visible mask permits the self-attention mechanism to consider the entire input for every output step.
+
+Middle - In contrast, the causal mask restricts the output at step 'i' from relying on input elements occurring after step 'i', preventing dependence on future elements.
+
+Right - The causal mask with a prefix allows a hybrid approach by enabling unrestricted attention for a section of the input sequence while enforcing causal masking for the rest, maintaining the restriction on future elements for specific parts of the sequence.</b></p>
+
+### Model Architecture Candidates
+When assessing various architectures suitable for language models, the authors of T5 primarily considered three types:
+
+1. Encoder-Decoder: This conventional structure involves an encoder-decoder setup, utilizing full visibility in the encoder and encoder-decoder attention. Causal masking is implemented in the decoder to prevent future output dependencies, ensuring predictions are made without accessing information from future positions.
+
+2. Language Model (LM): In this configuration, a single stack of Transformer layers forms the model. It receives the concatenation of input and target sequences while employing a causal mask consistently. As with typical language models, the output is restricted to attending only to past input or output elements.
+
+3. Prefix LM: The Prefix LM is an extension of the language model, incorporating the allowance for fully-visible masking over a segment of the input. This variant operates similarly to an LM, with the distinction that the output attends to a specific portion of the input—typically containing task-specific information (like translating English to German)—present in the prefix.
+
+The three model architecture types are depicted in the below figure - 
+
+![Transformer Architecture Schematics](./t5_transformer_archi_variant.png)
+
+The authors found that the Transformer (Encoder-Decoder) based architecture exhibits superior performance compared to alternative architectures, as shown by the results below - 
+![Architecture Comparison Results](./t5_arch_comp_results.png)
 
 ## Specifics of mT5 Pre-Training
 Now that we've grasped the intricacies of the model architecture and the intricately prepared dataset, let's delve into how these vital components synergize to craft the mT5 model. Examining the dataset crucial for training mT5, which spans 101 diverse languages, the process of sampling data during pre-training takes center stage. The methodology employed in pre-training mT5 to tackle this linguistic diversity is intriguing and noteworthy.
