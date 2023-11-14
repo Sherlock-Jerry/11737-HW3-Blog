@@ -4,6 +4,31 @@
 1. Akhil Eppa - <a href="aeppa@cs.cmu.edu">aeppa@cs.cmu.edu</a>
 2. R Raghav - <a href="rraghavr@cs.cmu.edu">rraghavr@cs.cmu.edu</a>
 
+This is an equation: $$E=mc^2$$
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.css"
+    integrity="sha384-GLhlTQ8iFZtDRQx4ZnDEbV2T00IvKxyF+qOOXYfGgAvaFjz9l+CyZPJn/C9En3Lh"
+    crossorigin="anonymous">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.js"
+    integrity="sha384-oGqR8C6ZpnuA8j+3+O3SJXpP+UAgyDjpbIpL5HfO2NlAfyq4S+L4k1npfXykWx5j"
+    crossorigin="anonymous"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/contrib/auto-render.min.js"
+    integrity="sha384-rh/ZEdGJ8J0pCr1Q8aAA4e6UpUd7WJb+ZfDK/8AYYhxQ9lb7PPdRE4zG4r3XoF0Z"
+    crossorigin="anonymous"></script>
+<script defer>
+    document.addEventListener("DOMContentLoaded", function () {
+        renderMathInElement(document.body, {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "\\[", right: "\\]", display: true },
+                { left: "\\(", right: "\\)", display: false }
+            ]
+        });
+    });
+</script>
+
+
+
 ## Introduction
 In this blog post, we'll delve into the intricacies of the mT5 model, a multilingual iteration of the T5 model. This variant has undergone training on a new dataset, showcasing improved performance across a diverse range of multilingual benchmarks. Notably, the mT5 model exhibits enhancements in tasks associated with the multilingual setting, all while leveraging the robust architecture of the "Text-to-Text Transformer" (T5) model.
 
