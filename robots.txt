@@ -2,4 +2,4 @@
 User-agent:*
 Disallow:
 
-Sitemap: https://sherlock-jerry.github.io/11737-HW3-Blog/sitemap.xml
+Sitemap: https://sherlock-jerry.github.io/sitemap.xml
