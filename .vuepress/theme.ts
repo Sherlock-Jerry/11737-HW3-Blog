@@ -14,7 +14,7 @@ export default hopeTheme({
 
   logo: "/logo.svg",
 
-  repo: "Sherlock-Jerry/11737-HW3-Blog",
+  repo: "sherlock-jerry/11737-HW3-Blog",
 
   // docsDir: "demo/src",
 
