@@ -4,7 +4,6 @@
 1. Akhil Eppa - <a href="aeppa@cs.cmu.edu">aeppa@cs.cmu.edu</a>
 2. R Raghav - <a href="rraghavr@cs.cmu.edu">rraghavr@cs.cmu.edu</a>
 
-This is an equation: $$E=mc^2$$
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.css"
     integrity="sha384-GLhlTQ8iFZtDRQx4ZnDEbV2T00IvKxyF+qOOXYfGgAvaFjz9l+CyZPJn/C9En3Lh"
@@ -27,6 +26,7 @@ This is an equation: $$E=mc^2$$
     });
 </script>
 
+This is an equation: $$E=mc^2$$
 
 
 ## Introduction
