@@ -3,18 +3,18 @@ import navbar from "./navbar.js";
 // import sidebar from "./sidebar.js";
 
 export default hopeTheme({
-  hostname: "https://lileicc.github.io",
+  hostname: "https://sherlock-jerry.github.io",
 
   author: {
     name: "Lei Li",
-    url: "https://www.cs.ucsb.edu/~leili",
+    // url: "https://www.cs.ucsb.edu/~leili",
   },
 
   iconAssets: "iconfont",
 
   logo: "/logo.svg",
 
-  repo: "lileicc/blog",
+  repo: "Sherlock-Jerry/11737-HW3-Blog",
 
   // docsDir: "demo/src",
 
