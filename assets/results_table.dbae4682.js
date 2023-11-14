@@ -1,0 +1,1 @@
+const s="/blog/assets/t5_example.2067c4f9.gif",t="/blog/assets/attention_patterns.f5e0112c.png",a="/blog/assets/t5_transformer_archi_variant.bdb30a9b.png",_="/blog/assets/t5_arch_comp_results.7ac541f1.png",o="/blog/assets/results_table.5e51ef1d.png";export{s as _,t as a,a as b,_ as c,o as d};
