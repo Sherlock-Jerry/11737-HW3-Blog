@@ -1,8 +1,8 @@
 # mT5: A Massively Multilingual Pre-Trained Text-To-Text Transformer
 
 ## Authors
-1. Akhil Eppa - aeppa@cs.cmu.edu
-2. R Raghav - rraghavr@cs.cmu.edu
+1. Akhil Eppa - <a href="aeppa@cs.cmu.edu">aeppa@cs.cmu.edu</a>
+2. R Raghav - <a href="rraghavr@cs.cmu.edu">rraghavr@cs.cmu.edu</a>
 
 ## Introduction
 In this blog post, we'll delve into the intricacies of the mT5 model, a multilingual iteration of the T5 model. This variant has undergone training on a new dataset, showcasing improved performance across a diverse range of multilingual benchmarks. Notably, the mT5 model exhibits enhancements in tasks associated with the multilingual setting, all while leveraging the robust architecture of the "Text-to-Text Transformer" (T5) model.
