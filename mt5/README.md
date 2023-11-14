@@ -137,15 +137,16 @@ To truly grasp the capabilities of the mT5 model, it's valuable to briefly explo
 In order to obtain a quick comparison of the mT5 model with the other multilingual language models mentioned above, check out the table below. It provides a snapshot of key parameters, supported languages, and data sources for models like mBERT, XLM, XLM-R, mBART, MARGE, and finally the mT5
 
 
-| Model                       | Architecture   | Parameters | # Languages | Data Source               |
-|-----------------------------|----------------|------------|--------------|---------------------------|
-| mBERT        | Encoder-only   | 180M       | 104          | Wikipedia                |
-| XLM| Encoder-only   | 570M       | 100          | Wikipedia                |
-| XLM-R| Encoder-only   | 270M – 550M | 100          | Common Crawl (CCNet)     |
-| mBART  | Encoder-decoder | 680M       | 25           | Common Crawl (CC25)      |
-| MARGE  | Encoder-decoder | 960M       | 26           | Wikipedia or CC-News    |
-| mT5                  | Encoder-decoder | 300M – 13B  | 101          | Common Crawl (mC4)       |
-*Table: A comparison of multilingual language models.*
+        | Model                       | Architecture   | Parameters | # Languages | Data Source               |
+        |-----------------------------|----------------|------------|--------------|---------------------------|
+        | mBERT        | Encoder-only   | 180M       | 104          | Wikipedia                |
+        | XLM| Encoder-only   | 570M       | 100          | Wikipedia                |
+        | XLM-R| Encoder-only   | 270M – 550M | 100          | Common Crawl (CCNet)     |
+        | mBART  | Encoder-decoder | 680M       | 25           | Common Crawl (CC25)      |
+        | MARGE  | Encoder-decoder | 960M       | 26           | Wikipedia or CC-News    |
+        | mT5                  | Encoder-decoder | 300M – 13B  | 101          | Common Crawl (mC4)       |
+
+                    *Table: A comparison of multilingual language models.*
 
 
 ## Wrapping it up (Conclusion)
