@@ -21,9 +21,9 @@ import theme from "./theme.js";
 
 export default defineUserConfig({
   lang: "en-US",
-  title: "MLNLP Blog",
+  title: "mT5: A Massively Multilingual Pre-Trained Text-To-Text Transformer | 11737-HW3-Blog",
   description: "A Blog for Machine Learning, Natural Language Processing, and Data Mining",
-  base: "/blog/",
+  base: "/11737-HW3-Blog/",
   theme,
   head: [
     ['script', {

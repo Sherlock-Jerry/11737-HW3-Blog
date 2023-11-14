@@ -4,11 +4,6 @@
 1. Akhil Eppa - <a href="aeppa@cs.cmu.edu">aeppa@cs.cmu.edu</a>
 2. R Raghav - <a href="rraghavr@cs.cmu.edu">rraghavr@cs.cmu.edu</a>
 
-
-This is an equation: $$E=mc^2$$
-<p>This is an equation: \(E=mc^2\)</p>
-<p>Another equation: \[f(x) = \int_{a}^{b} g(x) \,dx\]</p>
-
 ## Introduction
 In this blog post, we'll delve into the intricacies of the mT5 model, a multilingual iteration of the T5 model. This variant has undergone training on a new dataset, showcasing improved performance across a diverse range of multilingual benchmarks. Notably, the mT5 model exhibits enhancements in tasks associated with the multilingual setting, all while leveraging the robust architecture of the "Text-to-Text Transformer" (T5) model.
 
