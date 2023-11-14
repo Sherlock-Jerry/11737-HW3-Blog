@@ -84,7 +84,7 @@ Now that we've grasped the intricacies of the model architecture and the intrica
 
 Enter the zero-sum game approach, a key player in the pre-training of mT5. Think of it as a delicate balancing act – akin to walking a tightrope between learning too much from languages with limited resources and not learning enough from languages with abundant resources. Picture this: if we focus too much on languages with scarce resources, the model might become too specialized (overfitting), and if we neglect languages with plenty of resources, the model might not generalize well (underfitting). Striking the right balance is where the zero-sum game comes into play, a strategy not entirely novel but drawn from previous research, ensuring mT5 learns effectively from a diverse linguistic landscape.
 
-Diving into further technical aspects of this approach, low resource languages are boosted by sampling examples accoring to the probability equation represented by $p(L) \propto {|L|}^{\alpha}$. Let us break this down in order to understand the nuances better.  
+Diving into further technical aspects of this approach, low resource languages are boosted by sampling examples accoring to the probability equation represented by ${p(L)} {\propto} {|L|}^{\alpha}$. Let us break this down in order to understand the nuances better.  
 1. **The Purpose: Focusing on Linguistic Diversity**
     * It's crucial to prioritize low-resource languages, ensuring they receive more attention than their high-resource counterparts.
     * In the equation $p(L) \propto {|L|}^{\alpha}$, $p(L)$ signifies the likelihood of selecting text from a specific language ${L}$ during training, while ${|L|}$ represents the count of instances (sentences or text pieces) in language ${L}$.
