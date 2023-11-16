@@ -148,6 +148,63 @@ In order to obtain a quick comparison of the mT5 model with the other multilingu
 
 *Table: A comparison of multilingual language models.*
 
+## Capabilities through Examples
+Now that we have got a good understanding of the mT5 model, it makes sense to look at a few example to understand the capabilities of the mT5 model. As explained earlier, mT5 model has capabilities for multiple tasks such as summarization, question-answering and translation. 
+
+1. **Summarization of Spanish Text**  
+
+    ***Input Text:***  
+
+        Tal vez en Italia se inventó la pizza, pero no fue hasta que los napolitanos cruzaron el Atlántico que esta cocina con queso comenzó a despegar.
+        La primera pizzería documentada, Lombardi's, abrió en Manhattan en 1905 y todavía está abierta en la actualidad.
+        Antes de eso, había muchos vendedores sin licencia que vendían rebanadas a italoamericanos hambrientos.
+        Después de la Segunda Guerra Mundial, el mundo comenzó a clamar por todo lo americano, enviando la pizza a la estratosfera.
+        Chefs de todo el mundo comenzaron a experimentar con esta creación centenaria, renovándola con sabores e ingredientes locales como
+        la pizza al estilo siciliano. Ya no relegada como una comida no apta, la pizza se convirtió instantáneamente en un clásico,
+        lanzando numerosas cadenas e infinitas formas de satisfacer los antojos..  
+    
+    ***Summarized Text:***  
+
+        La pizza se convirtió instantáneamente en un clásico, lanzando numerosas cadenas e infinitas formas de satisfacer los antojos.  
+          
+2. **Question-Answering on Turkish Text**  
+  
+    ***Input Text:***  
+
+        Ateş dikkatli bir şekilde ele alınırsa çok faydalı olabilir. Ateş yakabilmek insanlar için her zaman çok önemli olmuştur. İnsanlar soğuk günlerde ısınmak için onun sıcaklığına ihtiyaç duyarlar. Ayrıca et pişirmek için de kullanılır. Işığı insanların karanlık yerleri görmesine ve yırtıcı hayvanları korkutmasına yardımcı oldu.  
+
+    ***Generated Question Answer Pairs:***  
+        
+        Q1. Ateş neye faydalı olur?  
+        A1. dikkatli bir şekilde ele alınırsa  
+
+        Q2. İnsanlar ne için sıcaklığına ihtiyaç duymuştur?  
+        A2. soğuk günlerde ısınmak için  
+
+        Q3. Ateş hangi amaçla kullanılır?  
+        A3. et pişirmek için  
+
+        Q4. Işığı neye yardımcı olmuştur?  
+        A4. insanların karanlık yerleri görmesine ve yırtıcı hayvanları korkutmasına  
+
+3. **Translation of Persian Text to English:**  
+    ***Input Text:***  
+        
+        آتش اگر با دقت برخورد شود می تواند بسیار مفید باش
+
+    ***Translated Text:***
+
+        The fire might be very helpful if it strikes carefully.  
+
+4. **Summarization of Thai Text:**  
+    ***Input Text:***  
+
+        ถ้าพูดถึงขนมหวานในตำนานที่ชื่นใจที่สุดแล้วละก็ต้องไม่พ้น น้ำแข็งใส แน่เพราะว่าเป็นอะไรที่ชื่นใจสุด  
+
+    ***Translated Text:***  
+
+        น้ําแข็งใสเป็นอะไรที่ชื่นใจที่สุด
+
 ## Wrapping it up (Conclusion)
 In conclusion, the mT5 model stands out as a powerful and versatile multilingual variant of the T5 model, demonstrating remarkable capabilities across a diverse range of languages. Its extensive pre-training on the mC4 dataset, encompassing 101 languages, and the innovative zero-sum game approach for balancing linguistic diversity during training contribute to its adaptability. The architecture of mT5, closely following T5 but with improvements, showcases the effectiveness of the encoder-decoder setup. The experiments and results presented in this blog highlight the model's superior performance, especially in zero-shot and translate-train scenarios, outperforming state-of-the-art benchmarks. Additionally, addressing challenges like accidental translation in span selection tasks underscores the model's complexity and the ongoing efforts to enhance its practical applications. As we navigate the evolving landscape of multilingual natural language processing, the mT5 model emerges as a promising solution, bridging language gaps and making advanced language processing more accessible to a global audience.
 
