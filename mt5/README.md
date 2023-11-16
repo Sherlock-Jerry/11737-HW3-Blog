@@ -149,7 +149,7 @@ In the realm of span selection tasks, the use of generative models, such as mT5,
 In addressing the challenge of accidental translation in span selection tasks, the authors explore a more general solution that aligns with the text-to-text framework applicable to all zero-shot generation tasks. Rather than task-specific modifications that limit the model's predictions to legal spans or outputs, they delve into the model's learning process during fine-tuning. Recognizing that the absence of exposure to non-English targets during fine-tuning leads the model to favor English outputs, they introduce a strategy inspired by domain-adaptive pre-training, infusing unsupervised multilingual tasks during fine-tuning to maintain the model's proficiency in generating multiple languages. By incorporating a small portion of multilingual data into the fine-tuning process, they observed a substantial reduction in illegal prediction rates, particularly benefiting mT5-Small and mT5-Base models, ultimately mitigating errors in span selection tasks like XQuAD.
 
 ## Capabilities through Examples
-Now that we have got a good understanding of the mT5 model, it makes sense to look at a few example to understand the capabilities of the mT5 model. As explained earlier, mT5 model has capabilities for multiple tasks such as summarization, question-answering and translation. 
+Now that we have a good understanding of the mT5 model, it makes sense to explore a few examples to grasp its capabilities. As explained earlier, the mT5 model is equipped with the ability to perform various tasks, including summarization, question-answering, and translation.
 
 1. **Summarization of Spanish Text**  
 
