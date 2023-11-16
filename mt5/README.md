@@ -205,7 +205,7 @@ Now that we have a good understanding of the mT5 model, it makes sense to explor
 
         น้ําแข็งใสเป็นอะไรที่ชื่นใจที่สุด
 
-## Wrapping it up (Conclusion)
+## Wrapping it up
 In conclusion, the mT5 model stands out as a powerful and versatile multilingual variant of the T5 model, demonstrating remarkable capabilities across a diverse range of languages. Its extensive pre-training on the mC4 dataset, encompassing 101 languages, and the innovative zero-sum game approach for balancing linguistic diversity during training contribute to its adaptability. The architecture of mT5, closely following T5 but with improvements, showcases the effectiveness of the encoder-decoder setup. The experiments and results presented in this blog highlight the model's superior performance, especially in zero-shot and translate-train scenarios, outperforming state-of-the-art benchmarks. Additionally, addressing challenges like accidental translation in span selection tasks underscores the model's complexity and the ongoing efforts to enhance its practical applications. As we navigate the evolving landscape of multilingual natural language processing, the mT5 model emerges as a promising solution, bridging language gaps and making advanced language processing more accessible to a global audience.
 
 ## References
