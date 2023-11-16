@@ -9,6 +9,10 @@ In this blog post, we'll delve into the intricacies of the mT5 model, a multilin
 
 By exploring this blog, you'll gain a comprehensive understanding of the mT5 model, unraveling its background and the journey that led to its development. We aim to shed light on the nuances behind the mT5 model, highlighting its features and the impact it has in the realm of multilingual natural language processing.
 
+<p align="center">
+    <img src="./Header_Image.png" alt="Header Image" width="75%"/>
+</p>
+
 ## Background
 To gain a better understanding of the mT5 model, let's start by exploring an overview of the T5 model and delving into what it means to accomplish a multilingual task. The T5 model, short for Text-to-Text Transformer, is a cutting-edge model designed for processing natural language. Its strength lies in the transformer architecture, an advanced neural network that excels in capturing intricate relations within text sequences, making it particularly adept at understanding and generating textual content.
 
