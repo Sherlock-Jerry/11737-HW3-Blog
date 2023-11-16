@@ -205,7 +205,7 @@ Now that we have a good understanding of the mT5 model, it makes sense to explor
 
         ถ้าพูดถึงขนมหวานในตำนานที่ชื่นใจที่สุดแล้วละก็ต้องไม่พ้น น้ำแข็งใส แน่เพราะว่าเป็นอะไรที่ชื่นใจสุด  
 
-    ***Translated Text:***  
+    ***Summarized Text:***  
 
         น้ําแข็งใสเป็นอะไรที่ชื่นใจที่สุด
 
